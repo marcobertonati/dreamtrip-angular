@@ -1,0 +1,27 @@
+<h2>Add travel!</h2>
+
+
+<input type="text" value="{{travel?.country}}" [(ngModel)]="travel && travel.country" />
+<input type="text" value="{{travel?.city}}" [(ngModel)]="travel && travel.city" />
+<input type="text" value="{{travel?.date}}" [(ngModel)]="travel && travel.date" />
+<input type="text" value="{{travel?.budget}}" [(ngModel)]="travel && travel.budget" />
+<input type="text" value="{{travel?.comment}}" [(ngModel)]="travel && travel.comment" />
+<input type="text" value="{{travel?.contact}}" [(ngModel)]="travel && travel.contact" />
+<input type="radio" id="radio-yes" name="active-travel" value="0">
+  <label for="radio-yes">Yes</label><br>
+
+<input type="radio" id="radio-no" name="active-travel" value="false">
+  <label for="radio-no">No</label><br>
+
+
+<button (click)="addTravel()">Create Travel</button>
+
+<ul>
+    <li>{{travel?.country}}</li>
+    <li>{{travel?.city}}</li>
+    <li>{{travel?.date}}</li>
+    <li>{{travel?.budget}}</li>
+    <li>{{travel?.comment}}</li>
+    <li>{{travel?.contact}}</li>
+    <li>{{travel?.active}}</li>
+</ul>

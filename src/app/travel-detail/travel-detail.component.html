@@ -1,0 +1,15 @@
+<h2>Travel detail</h2>
+<p *ngIf="travel === undefined">No travel founded
+<p>
+
+<p>{{travel?.country}}</p>
+<p>{{travel?.city}}</p>
+<p>{{travel?.date}}</p>
+<p>{{travel?.budget}}</p>
+<p>{{travel?.comment}}</p>
+<p>{{travel?.contact}}</p>
+
+<button *ngIf="profile === true" (click)="deleteTravel(travel?.id_travel)">Delete travel</button>
+
+<button *ngIf="profile === true"><a routerLink="/travel/update/{{travel?.id_travel}}"> Update details!
+</a></button>

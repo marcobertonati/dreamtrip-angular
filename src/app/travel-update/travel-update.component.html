@@ -1,0 +1,15 @@
+<h2>Update travel!</h2>
+<p *ngIf="travel === undefined">No travel founded
+<p>
+
+    <input type="text" value="{{travel?.country}}" [(ngModel)]="travel && travel.country" />
+    <input type="text" value="{{travel?.city}}" [(ngModel)]="travel && travel.city" />
+    <input type="text" value="{{travel?.date}}" [(ngModel)]="travel && travel.date" />
+    <input type="text" value="{{travel?.budget}}" [(ngModel)]="travel && travel.budget" />
+    <input type="text" value="{{travel?.comment}}" [(ngModel)]="travel && travel.comment" />
+    <input type="text" value="{{travel?.contact}}" [(ngModel)]="travel && travel.contact" />
+
+
+    <button (click)="updateTravel()">Actualizar viaje</button>
+
+<p>{{travel?.country}}</p>
