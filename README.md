@@ -1,5 +1,9 @@
 # DreamTrip
 
+The Dreamtrip app consumed [Dreamtrip-API](https://github.com/marcobertonati/dreamtrip-api)
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 ## Development server
